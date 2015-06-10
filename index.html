@@ -18,16 +18,24 @@
     <!-- controllers -->
     <script src="controllers/players.js"></script>
     <script src="controllers/teams.js"></script>
+    <script src="controllers/new-player.js"></script>
+    <script src="controllers/team.js"></script>
+    <script src="controllers/player.js"></script>
+
     <!-- routes -->
     <script src="routes/players.js"></script>
     <script src="routes/teams.js"></script>
+    <script src="routes/player.js"></script>
+    <script src="routes/team.js"></script>
+    <script src="routes/new-player.js"></script>
+
     <!-- models -->
     <script src="models/player.js"></script>
     <script src="models/team.js"></script>
 
     <script>
       EmberHandlebarsLoader.loadTemplates([
-        'players', 'player', 'teams'
+        'team', 'player', 'teams', 'new-player'
       ]);
     </script>
   </head>

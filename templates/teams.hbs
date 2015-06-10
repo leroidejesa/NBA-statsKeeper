@@ -1,6 +1,7 @@
+<div class="container">
 <h1> Teams </h1>
 {{#each team in model}}
-<li>{{#link-to 'players' team.id}}{{team.name}}{{/link-to}}</li>
+<li>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</li>
 {{/each}}
 
 <form>
@@ -10,3 +11,8 @@
     <button class="btn btn-primary" {{action 'save_team'}}>Save</button>
   </div>
 </form>
+
+</div>
+<div class="container">
+{{outlet}}
+</div>

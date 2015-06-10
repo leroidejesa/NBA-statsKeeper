@@ -1,0 +1,11 @@
+<h2>{{this.name}}</h2>
+
+<ul>
+  {{#each player in this.players}}
+  <li>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<p>{{#link-to 'new-player' this.id class="btn btn=default"}}New Player{{/link-to}}</p>
+
+{{outlet}}

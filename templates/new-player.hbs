@@ -1,0 +1,9 @@
+<form>
+  <div class="form-group">
+    <label for="add_player">Add player</label>
+    {{textarea value=playername class="form-control"}}
+    <label for="add_image">Add image:</label>
+    {{textarea value=image class="form-control"}}
+    <button class="btn btn-primary" {{action 'save_player'}}>Save</button>
+  </div>
+</form>
