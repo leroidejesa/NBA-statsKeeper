@@ -1,0 +1,12 @@
+<h1> Teams </h1>
+{{#each team in model}}
+<li>{{#link-to 'players' team.id}}{{team.name}}{{/link-to}}</li>
+{{/each}}
+
+<form>
+  <div class="form-group">
+    <label for="add_team">Add team</label>
+    {{textarea value=name}}
+    <button class="btn btn-primary" {{action 'save_team'}}>Save</button>
+  </div>
+</form>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auction Catalogue</title>
+    <!-- styles -->
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- setup -->
+    <script src="libs/jquery-1.11.1.js"></script>
+    <script src="libs/ember-template-compiler-1.10.0.js"></script>
+    <script src="libs/ember-1.10.0.debug.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="libs/ember-data-1.0.0-beta.15.js"></script>
+    <script src="libs/localstorage-adapter-0.5.1.js"></script>
+
+    <script src="statskeeper.js"></script>
+    <script src="router.js"></script>
+    <script src="store.js"></script>
+    <!-- controllers -->
+    <script src="controllers/players.js"></script>
+    <script src="controllers/teams.js"></script>
+    <!-- routes -->
+    <script src="routes/players.js"></script>
+    <script src="routes/teams.js"></script>
+    <!-- models -->
+    <script src="models/player.js"></script>
+    <script src="models/team.js"></script>
+
+    <script>
+      EmberHandlebarsLoader.loadTemplates([
+        'players', 'player', 'teams'
+      ]);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+
+    </div>
+
+  </body>
+</html>
