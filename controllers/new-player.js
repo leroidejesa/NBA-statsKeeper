@@ -6,7 +6,11 @@ Statskeeper.NewPlayerController = Ember.ObjectController.extend({
         var imageUrl = this.get('image');
         var newItem = this.store.createRecord('player', {
           name: this.get('playername'),
-          image: (imageUrl)
+          image: (imageUrl),
+          shotAttempts: 0,
+          shotsMade: 0,
+          assists: 0,
+          rebounds: 0
 
         });
         newItem.save();
@@ -14,7 +18,6 @@ Statskeeper.NewPlayerController = Ember.ObjectController.extend({
         var team = this.get('controllers.team.model');
         team.get('players').pushObject(newItem);
         team.save();
-        console.log(team)
 
         this.transitionToRoute('team', team.id)
       }

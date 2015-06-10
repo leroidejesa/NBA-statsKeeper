@@ -1,7 +1,7 @@
 <h1> {{name}} </h1>
   <img {{bind-attr src=image}} alt="picture of this player">
   <br>
-  Shot Attempts: {{shotAttempts}} <br>
-  Shots Made: {{shotsMade}} <br>
-  Assists: {{assists}} <br>
-  Rebounds: {{rebounds}}
+  Shot Attempts: {{shotAttempts}} <button class="btn btn-danger" {{action 'missed_shot'}}>Miss </button> <br>
+  Shots Made: {{shotsMade}} <button class="btn btn-success" {{action 'made_shot'}}>Make </button><br>
+  Assists: {{assists}} <button class="btn btn-success" {{action 'add_assist'}}>Assist </button><br>
+  Rebounds: {{rebounds}} <button class="btn btn-success" {{action 'add_rebound'}}>Rebound </button>
