@@ -10,7 +10,8 @@ Statskeeper.NewPlayerController = Ember.ObjectController.extend({
           shotAttempts: 0,
           shotsMade: 0,
           assists: 0,
-          rebounds: 0
+          rebounds: 0,
+          shotPercentage: 0
 
         });
         newItem.save();

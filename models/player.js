@@ -3,6 +3,7 @@ Statskeeper.Player = DS.Model.extend({
   image: DS.attr(),
   shotAttempts: DS.attr(),
   shotsMade: DS.attr(),
+  shotPercentage: DS.attr(),
   assists: DS.attr(),
   rebounds: DS.attr(),
   team: DS.belongsTo('team', {async: true})
