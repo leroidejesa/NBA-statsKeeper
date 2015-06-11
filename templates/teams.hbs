@@ -1,19 +1,24 @@
 <div class="container">
-<h1> Teams </h1>
-<button {{action 'highScorer'}}> test </button>
-{{#each team in model}}
-<li><div id='checkHighScorer' {{action 'highScorer'}}>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</div></li>
-{{/each}}
+  <div class="col-md-4">
+    <h1> Teams </h1>
+    {{#each team in model}}
+      <li><div id='checkHighScorer' {{action 'highScorer'}}>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</div></li>
+    {{/each}}
 
-<form>
-  <div class="form-group">
-    <label for="add_team">Add team</label>
-    {{textarea value=name}}
-    <button class="btn btn-primary" {{action 'save_team'}}>Save</button>
+    <form>
+      <div class="form-group">
+        <label for="add_team">Add team</label>
+        {{textarea value=name}}
+        <button class="btn btn-primary" {{action 'save_team'}}>Save</button>
+      </div>
+    </form>
   </div>
-</form>
+</div>
 
-</div>
 <div class="container">
-{{outlet}}
+  <div class="col-md-4">
+    {{outlet "team"}}
+  </div>
 </div>
+
+{{outlet "player"}}

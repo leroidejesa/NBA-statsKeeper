@@ -1,4 +1,5 @@
-<h1> {{name}} </h1>
+<div class="col-md-6">
+  <h1> {{name}} </h1>
   <img {{bind-attr src=image}} alt="picture of this player">
   <br>
   Points: {{points}} <br>
@@ -7,3 +8,4 @@
   Shots Made: {{shotsMade}} <button class="btn btn-success" {{action 'made_shot'}}>Make </button><br>
   Assists: {{assists}} <button class="btn btn-success" {{action 'add_assist'}}>Assist </button><br>
   Rebounds: {{rebounds}} <button class="btn btn-success" {{action 'add_rebound'}}>Rebound </button>
+</div>
