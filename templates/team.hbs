@@ -1,8 +1,9 @@
 <h2>{{this.name}}</h2>
 
 <ul>
+
   {{#each player in this.players}}
-  <li>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</li>
+      <li><div {{bind-attr class="highScorer:highScorer"}}>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</div></li>
   {{/each}}
 </ul>
 

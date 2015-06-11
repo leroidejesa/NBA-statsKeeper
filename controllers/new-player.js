@@ -7,12 +7,13 @@ Statskeeper.NewPlayerController = Ember.ObjectController.extend({
         var newItem = this.store.createRecord('player', {
           name: this.get('playername'),
           image: (imageUrl),
+          points: 0,
           shotAttempts: 0,
           shotsMade: 0,
           assists: 0,
           rebounds: 0,
-          shotPercentage: 0
-
+          shotPercentage: 0,
+          highScorer: false
         });
         newItem.save();
 

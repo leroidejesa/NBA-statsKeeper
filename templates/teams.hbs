@@ -1,7 +1,8 @@
 <div class="container">
 <h1> Teams </h1>
+<button {{action 'highScorer'}}> test </button>
 {{#each team in model}}
-<li>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</li>
+<li><div id='checkHighScorer' {{action 'highScorer'}}>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</div></li>
 {{/each}}
 
 <form>

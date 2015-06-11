@@ -6,5 +6,7 @@ Statskeeper.Player = DS.Model.extend({
   shotPercentage: DS.attr(),
   assists: DS.attr(),
   rebounds: DS.attr(),
+  points: DS.attr(),
+  highScorer: DS.attr(),
   team: DS.belongsTo('team', {async: true})
 });
