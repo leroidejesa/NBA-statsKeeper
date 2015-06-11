@@ -18,6 +18,8 @@ Statskeeper.TeamsController = Ember.ArrayController.extend({
                 players.forEach(function(player){
                   if (player.get('points') === scores[0] && scores.length > 0){
                     player.set('highScorer', true);
+                  } else {
+                    player.set('highScorer', false);
                   }
                 });
           });

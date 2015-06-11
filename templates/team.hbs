@@ -3,7 +3,11 @@
 <ul>
 
   {{#each player in this.players}}
-      <li><div {{bind-attr class="highScorer:highScorer"}}>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</div></li>
+  {{#if player.highScorer}}
+      <li><span class='highScorer'>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</span></li>
+  {{else}}
+  <li>{{#link-to 'player' player.id}}{{player.name}}{{/link-to}}</li>
+  {{/if}}
   {{/each}}
 </ul>
 
