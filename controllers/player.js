@@ -1,25 +1,21 @@
 Statskeeper.PlayerController = Ember.ObjectController.extend({
   actions: {
-      missed_shot: function() {
-      var player = this.get('player');
-      player.set('shotAttempts', player.shotAttempts + 1);
-      player.save();
+    missed_shot: function() {
+      this.set('shotAttempts', this.get('shotAttempts') + 1);
+      this.get('model').save()
     },
     made_shot: function () {
-      var player = this.get('player');
-      player.set("shotAttempts", player.shotAttempts + 1);
-      player.set("shotsMade", player.shotsMade + 1);
-      player.save();
+      this.set("shotAttempts", this.get('shotAttempts') + 1);
+      this.set("shotsMade", this.get('shotsMade') + 1);
+      this.get('model').save();
     },
     add_assist: function() {
-      var player = this.get('player');
-      player.set("assists", player.assists + 1);
-      player.save();
+      this.set("assists", this.get('assists') + 1);
+      this.get('model').save();
     },
     add_rebound: function() {
-      var player = this.get('player');
-      player.set("rebounds", player.rebounds + 1);
-      player.save();
+      this.set("rebounds", this.get('rebounds') + 1);
+      this.get('model').save();
     }
   }
 
