@@ -3,11 +3,11 @@
     <h1> {{name}} </h1>
     <img {{bind-attr src=image}} alt="picture of this player">
     <br>
-    Points: {{points}} <br>
-    Shot Percentage: {{shotPercentage}} %<br>
-    Shot Attempts: {{shotAttempts}} <button class="btn btn-danger" {{action 'missed_shot'}}>Miss </button> <br>
-    Shots Made: {{shotsMade}} <button class="btn btn-success" {{action 'made_shot'}}>Make </button><br>
-    Assists: {{assists}} <button class="btn btn-success" {{action 'add_assist'}}>Assist </button><br>
-    Rebounds: {{rebounds}} <button class="btn btn-success" {{action 'add_rebound'}}>Rebound </button>
+    <span class= "stat">Points: {{points}} </span><br><br>
+    <span class= "stat">Shot Percentage: {{shotPercentage}}% </span> <br><br>
+    <span class= "stat">Shot Attempts: {{shotAttempts}}</span> <button class="btn-xs btn-danger" {{action 'missed_shot'}}>Miss </button><br> <br>
+    <span class= "stat">Shots Made: {{shotsMade}}</span> <button class="btn-xs btn-success" {{action 'made_shot'}}>Make </button><br><br>
+    <span class= "stat">Assists: {{assists}} </span><button class="btn-xs btn-success" {{action 'add_assist'}}>Assist </button><br><br>
+    <span class= "stat">Rebounds: {{rebounds}}</span> <button class="btn-xs btn-success" {{action 'add_rebound'}}>Rebound </button>
   </div>
 </div>

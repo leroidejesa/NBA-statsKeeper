@@ -1,3 +1,21 @@
 .highScorer {
   background-color: yellow;
 }
+
+.col-md-3 {
+  padding-left: 50px;
+}
+
+img {
+  height: auto;
+  width: 175px;
+}
+
+.btn-xs {
+  float: right;
+
+}
+
+.stat {
+  float: left;
+}
