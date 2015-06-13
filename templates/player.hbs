@@ -1,7 +1,7 @@
-<div class="row">
-  <div class="col-md-4">
+
+  <div class="col-sm-4 col-centered">
+    <img {{bind-attr src=image}} alt="picture of this player" class="player-img">
     <h1> {{name}} </h1>
-    <img {{bind-attr src=image}} alt="picture of this player">
     <br>
     <span class= "stat">Points: {{points}} </span><br><br>
     <span class= "stat">Shot Percentage: {{shotPercentage}}% </span> <br><br>
@@ -10,4 +10,3 @@
     <span class= "stat">Assists: {{assists}} </span><button class="btn-xs btn-success" {{action 'add_assist'}}>Assist </button><br><br>
     <span class= "stat">Rebounds: {{rebounds}}</span> <button class="btn-xs btn-success" {{action 'add_rebound'}}>Rebound </button>
   </div>
-</div>

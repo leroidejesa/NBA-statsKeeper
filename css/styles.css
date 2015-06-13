@@ -6,9 +6,9 @@
   padding-left: 50px;
 }
 
-img {
-  height: auto;
-  width: 175px;
+.player-img {
+  height: 300px;
+  width: auto;
 }
 
 .btn-xs {
@@ -18,4 +18,14 @@ img {
 
 .stat {
   float: left;
+}
+
+#nba-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.row {
+  margin: 0 auto;
 }

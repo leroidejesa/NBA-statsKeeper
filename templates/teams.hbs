@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-md-3">
+<div class="row-centered">
+  <div class="col-md-4 col-centered">
     <h1> Teams </h1>
     {{#each team in model}}
       <li><div id='checkHighScorer' {{action 'highScorer'}}>{{#link-to 'team' team.id}}{{team.name}}{{/link-to}}</div></li>
@@ -13,14 +13,12 @@
       </div>
     </form>
   </div>
-
-
-  <div class="col-md-2">
-    {{outlet "team"}}
-    {{outlet}}
-  </div>
-  <div class="col-md-7">
     {{outlet "player"}}
-  </div>
+</div>
 
+<div class="row-centered">
+  <div class="col-md-4 col-centered">
+    {{outlet "team"}}
+    <!-- {{outlet}} -->
+  </div>
 </div>
